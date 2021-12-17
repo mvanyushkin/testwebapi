@@ -43,3 +43,11 @@ steps:
     deployToSlotOrASE: true
     ResourceGroupName: 'testapp'
     SlotName: 'pre-prod'
+
+- task: AzureAppServiceManage@0
+  inputs:
+    azureSubscription: 'max-vanyushkin-dont-use-this-one (821d2aa3-49ff-4f13-8250-c975306876ff)'
+    Action: 'Swap Slots'
+    WebAppName: 'sdgfhftgyujrtyurrter'
+    ResourceGroupName: 'testapp'
+    SourceSlot: 'pre-prod'
