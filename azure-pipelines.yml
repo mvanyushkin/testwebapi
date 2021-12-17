@@ -32,3 +32,11 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'max-vanyushkin-dont-use-this-one (821d2aa3-49ff-4f13-8250-c975306876ff)'
+    appType: 'webApp'
+    WebAppName: 'sdgfhftgyujrtyurrter'
+    packageForLinux: '$(build.artifactStagingDirectory)/**/*.zip'
