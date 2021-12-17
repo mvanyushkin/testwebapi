@@ -40,3 +40,6 @@ steps:
     appType: 'webApp'
     WebAppName: 'sdgfhftgyujrtyurrter'
     packageForLinux: '$(build.artifactStagingDirectory)/**/*.zip'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'testapp'
+    SlotName: 'pre-prod'
